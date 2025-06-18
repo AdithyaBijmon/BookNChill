@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNChill</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chilanka&family=Dancing+Script:wght@400..700&family=Delius&family=Miltonian+Tattoo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Style link -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div
+        class="main bg-[url(https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/11/how-to-train-your-dragon-live-action-4.jpg)]  w-full md:h-160 h-220 bg-cover md:bg-bottom bg-center">
+        <div class="bgDark w-full md:h-160 h-220" style="background-color: rgba(0, 0, 0, 0.229);">
+            <!-- Navbar -->
+
+            <div class="navbar md:p-10 p-8">
+                <a href="" class="float-left text-zinc-50">
+                    <h1 class="md:text-3xl text-3xl font-bold"><i class="fa-solid fa-film"></i> Book<span
+                            class="text-red-600">N</span>Chill</h1>
+                </a>
+                <ul class="text-zinc-50 ms-2  flex float-right md:justify-evenly md:text-xl text-xl">
+                    <li class="md:me-10 me-3  hover:bg-red-600 md:px-5 rounded-xl ">Home</li>
+                    <li class="md:me-10 me-3 hover:bg-red-600 md:px-5 rounded-xl ">Movies</li>
+                    <li class="md:me-10 me-3 hover:bg-red-600 md:px-5 rounded-xl ">About</li>
+                    <li class="md:me-30 me-3 hover:bg-red-600 md:px-5 rounded-xl ">Offers</li>
+                    <li class="md:me-5 bg-red-600 md:px-5 px-3  rounded-xl hover:bg-red-400 ">Login</li>
+
+                </ul>
+            </div>
+
+            <!-- header content -->
+            <div>
+                <div class="md:grid grid-cols-2">
+                    <div class="md:px-50 px-20 py-5 md:mt-0 mt-7 md:py-10">
+                        <img src="https://www.universalpictures.co.uk/tl_files/content/movies/httyd_liveaction/posters/02.jpg"
+                            alt="no image"
+                            class="md:w-[400px] w-[250px]  h-[310px] md:h-[500px]  shadow-lg">
+                    </div>
+                    <div class="md:my-10 md:py-10 md:px-0  text-zinc-50">
+                        <h1 class="md:text-xl text-lg text-center">HOW TO TRAIN YOUR</h1>
+                        <h1 class=" md:text-9xl text-4xl text-center">Dragon</h1>
+                        <ul class="flex mt-[30px] list-disc text-xl justify-center items-center ">
+                            <li class="ms-5 ">Action</li>
+                            <li class="ms-10">Drama</li>
+                            <li class="ms-10">Adventure</li>
+                        </ul>
+                        <p class="py-4 md:px-20 px-5 md:text-lg text-lg text-justify">The story takes place in Berk, a
+                            mythical Viking village; Hiccup, an undersized teen outcast and son of the village
+                            chieftain, wishing to become a dragon slayer like the other Vikings, injures a rare Night
+                            Fury dragon but is unable to bring himself to kill it.</p>
+
+                        <div class="grid grid-cols-3 md:mx-40 mx-10">
+                            <div>
+                                <i class="fa-solid fa-clock"></i><span class="text-lg"> 1hr 38m</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-closed-captioning"></i><span class="text-lg"> Subtitles</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i><span class="text-lg"> :
+                                    9.1/10</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center md:mt-10 mt-5">
+                            <button class="bg-red-600 px-5 py-2 rounded-2xl hover:bg-red-400">Book now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Day and time select content -->
+
+    <div class="md:grid grid-cols-4 bg-slate-800 h-[100px] text-zinc-50 ps-40">
+        
+        <div class="mt-7">
+           
+            <select class="form-control border w-80 rounded-xl appearance-none p-3" aria-placeholder="select movie ">
+                 <i class="fa-solid fa-ticket"></i>
+                <option value="" class="hidden">Select movie</option>
+                <option value="" class="text-slate-700">HOW TO TRAIN YOUR DRAGON</option>
+                <option value="" class="text-slate-700">CHOTTA MUMBAI</option>
+                <option value="" class="text-slate-700">FROM THE WORLD OF JOHN WICK: BALLERINA</option>
+                <option value="" class="text-slate-700">MATERIALISTS</option>
+
+            </select>
+        </div>
+        <div class="mt-7">
+            <select class="form-control border w-80  rounded-xl appearance-none p-3" aria-placeholder="select movie ">
+                <option value="" class="hidden">Select date</option>
+                <option value="" class="text-slate-700">Today,18 Jun</option>
+                <option value="" class="text-slate-700">Tomorrow,19 Jun</option>
+                <option value="" class="text-slate-700">Fri,20 Jun</option>
+                <option value="" class="text-slate-700">Sat,21 Jun</option>
+                <option value="" class="text-slate-700">Sun,22 Jun</option>
+
+            </select>
+        </div>
+        <div class="mt-7">
+            <select class="form-control border w-80  rounded-xl appearance-none p-3" >
+                <option value="" class="hidden">Select time</option>
+                <option value="" class="text-slate-700">Today,18 Jun</option>
+                <option value="" class="text-slate-700">Tomorrow,19 Jun</option>
+                <option value="" class="text-slate-700">Fri,20 Jun</option>
+                <option value="" class="text-slate-700">Sat,21 Jun</option>
+                <option value="" class="text-slate-700">Sun,22 Jun</option>
+
+            </select>
+        </div>
+         <div class="mt-8">
+           <button class="bg-red-600 px-7 py-2 rounded-2xl hover:bg-red-400">Book Ticket</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
