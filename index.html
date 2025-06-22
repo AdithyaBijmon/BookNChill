@@ -27,7 +27,7 @@
 
     <div class="website bg-slate-900 ">
         <!-- Header -->
-        <div
+        <div id="home"
             class="main bg-[url(https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/11/how-to-train-your-dragon-live-action-4.jpg)]  w-full md:h-160 h-220 bg-cover md:bg-bottom bg-center">
             <div class="bgDark w-full md:h-160 h-220" style="background-color: rgba(0, 0, 0, 0.229);">
                 <!-- Navbar -->
@@ -38,10 +38,16 @@
                                 class="text-red-600">N</span>Chill</h1>
                     </a>
                     <ul class="text-zinc-50 ms-2  flex float-right md:justify-evenly md:text-xl text-xl cursor-pointer">
-                        <li class="md:me-10 me-3  hover:bg-red-600 md:px-5 rounded-xl ">Home</li>
-                        <li class="md:me-10 me-3 hover:bg-red-600 md:px-5 rounded-xl ">Movies</li>
+                        <a href="#home">
+                            <li class="md:me-10 me-3  hover:bg-red-600 md:px-5 rounded-xl ">Home</li>
+                        </a>
+                        <a href="#now">
+                            <li class="md:me-10 me-3 hover:bg-red-600 md:px-5 rounded-xl ">Movies</li>
+                        </a>
                         <li class="md:me-10 me-3 hover:bg-red-600 md:px-5 rounded-xl ">About</li>
-                        <li class="md:me-30 me-3 hover:bg-red-600 md:px-5 rounded-xl ">Offers</li>
+                        <a href="#offers">
+                            <li class="md:me-30 me-3 hover:bg-red-600 md:px-5 rounded-xl ">Offers</li>
+                        </a>
                         <li class="md:me-5 bg-red-600 md:px-5 px-3  rounded-xl hover:bg-red-400 ">Login</li>
 
                     </ul>
@@ -143,10 +149,18 @@
         <div class="movies-nav text-zinc-50 md:px-40 px-5 mt-10 py-7">
             <div>
                 <ul class="flex justify-evenly cursor-pointer text-lg ">
-                    <li>Now showing</li>
-                    <li>Coming soon</li>
-                    <li>Trailers</li>
-                    <li>Offers</li>
+                    <a href="#now">
+                        <li>Now showing</li>
+                    </a>
+                    <a href="#soon">
+                        <li>Coming soon</li>
+                    </a>
+                    <a href="#trailers">
+                        <li>Trailers</li>
+                    </a>
+                    <a href="#offers">
+                        <li>Offers</li>
+                    </a>
                 </ul>
                 <div class="bg-red-500 h-1 w-full rounded-2xl mt-5">
 
@@ -158,7 +172,7 @@
 
         <div class="md:py-10  px-8">
             <ul class="text-zinc-50 flex justify-between items-center md:px-20">
-                <li class="md:text-3xl text-xl font-bold">Now showing</li>
+                <li class="md:text-3xl text-xl font-bold" id="now">Now showing</li>
                 <div class="float-right flex ">
                     <li class="md:me-10 me-2">
                         <select class="form-control border md:w-30  w-25 rounded-xl appearance-none p-2 ">
@@ -535,7 +549,7 @@
         <!-- Coming soon -->
         <div class="md:py-10  px-8">
             <ul class="text-zinc-50 flex justify-between items-center md:px-20">
-                <li class="md:text-3xl text-2xl font-bold">Coming Soon</li>
+                <li class="md:text-3xl text-2xl font-bold" id="soon">Coming Soon</li>
                 <div class="float-right flex ">
 
                     <li>
@@ -704,7 +718,7 @@
         <!-- Trailers -->
         <div class="md:py-10 py-5  px-8">
             <div class="text-zinc-50 flex justify-between items-center md:px-20">
-                <h1 class="md:text-3xl  text-2xl font-bold">Trailers</h1>
+                <h1 class="md:text-3xl  text-2xl font-bold" id="trailers">Trailers</h1>
                 <button class="form-control border md:w-40 w-40 rounded-xl p-2"> View all trailers <i
                         class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
 
@@ -724,7 +738,7 @@
 
         <div class="md:py-10 py-5  px-8">
             <div class="text-zinc-50 flex justify-between items-center md:px-20">
-                <h1 class="md:text-3xl text-2xl font-bold">Offers</h1>
+                <h1 class="md:text-3xl text-2xl font-bold" id="offers">Offers</h1>
             </div>
             <div class="grid md:grid-cols-4  gap-4 md:px-20 mt-5">
                 <div class="mt-5 md:mt-0 ">
@@ -739,7 +753,9 @@
                             <h4 class=" text-zinc-50 font-bold  text-xl ">Buy one and get one ticket</h4>
                             <p class="text-zinc-300 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing
                                 elit.</p>
-                             <div class="flex justify-center items-center"><button class="bg-red-600 hover:bg-red-400 text-zinc-50 py-2 px-4 mt-3 w-50 rounded-4xl">View</button></div>
+                            <div class="flex justify-center items-center"><button
+                                    class="bg-red-600 hover:bg-red-400 text-zinc-50 py-2 px-4 mt-3 w-50 rounded-4xl">View</button>
+                            </div>
 
 
                         </div>
@@ -759,7 +775,9 @@
                         <h4 class=" text-zinc-50 font-bold  text-xl ">50% Discount</h4>
                         <p class="text-zinc-300 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                         </p>
-                         <div class="flex justify-center items-center "><button class="bg-red-600 hover:bg-red-400 text-zinc-50 py-2 px-4 mt-3 w-50 rounded-4xl">View</button></div>
+                        <div class="flex justify-center items-center "><button
+                                class="bg-red-600 hover:bg-red-400 text-zinc-50 py-2 px-4 mt-3 w-50 rounded-4xl">View</button>
+                        </div>
 
 
 
@@ -778,7 +796,9 @@
                         <h4 class=" text-zinc-50 font-bold  text-xl ">Flat ₹100 off</h4>
                         <p class="text-zinc-300 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                         </p>
-                          <div class="flex justify-center items-center"><button class="bg-red-600 hover:bg-red-400 text-zinc-50 py-2 px-4 mt-3 w-50 rounded-4xl">View</button></div>
+                        <div class="flex justify-center items-center"><button
+                                class="bg-red-600 hover:bg-red-400 text-zinc-50 py-2 px-4 mt-3 w-50 rounded-4xl">View</button>
+                        </div>
 
 
 
@@ -789,34 +809,80 @@
                 <div class="mt-5 md:mt-0">
                     <div class="img-main">
                         <div class="img-main">
-                            <img src="https://i.pinimg.com/736x/d8/70/76/d87076bf69e5fcb431699006ef09b633.jpg"
-                                alt="" class="w-full md:h-90 h-60 rounded-2xl ">
-                     
+                            <img src="https://i.pinimg.com/736x/d8/70/76/d87076bf69e5fcb431699006ef09b633.jpg" alt=""
+                                class="w-full md:h-90 h-60 rounded-2xl ">
+
+                        </div>
+                        <div>
+                            <h4 class=" text-zinc-50 font-bold  text-xl ">Tuesday offer : @99</h4>
+                            <p class="text-zinc-300 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                elit.
+                            </p>
+                            <div class="flex justify-center items-center"><button
+                                    class="bg-red-600 hover:bg-red-400 text-zinc-50 py-2 px-4 mt-3 w-50 rounded-4xl">View</button>
+                            </div>
+
+
+
+                        </div>
+
+
                     </div>
-                     <div>
-                        <h4 class=" text-zinc-50 font-bold  text-xl ">Tuesday offer : @99</h4>
-                        <p class="text-zinc-300 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        </p>
-                        <div class="flex justify-center items-center"><button class="bg-red-600 hover:bg-red-400 text-zinc-50 py-2 px-4 mt-3 w-50 rounded-4xl">View</button></div>
 
 
 
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- footer -->
+        <div class="pt-40   md:px-30 px-5 ">
+
+            <div class="md:grid grid-cols-3 gap-10">
+                <div>
+                    <h1 class="text-2xl font-bold text-zinc-50"><i class="fa-solid fa-film"></i> Book<span
+                            class="text-red-600">N</span>Chill</h1>
+                    <p class="text-justify mt-6 text-zinc-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ratione rem
+                        corrupti, nobis nesciunt eum
+                        delectus cupiditate nihil rerum dignissimos sunt expedita est voluptatem amet quia autem, a
+                        libero voluptatum eos.</p>
+                </div>
+                <div>
+                    <div class="flex justify-center items-center pt-20 text-zinc-50">
+                        <i class="fa-brands fa-instagram fa-xl me-5" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-facebook fa-xl me-5" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-linkedin fa-xl me-5" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-youtube fa-xl me-5" style="color: #e22222;"></i>
+                        <i class="fa-brands fa-x-twitter fa-xl" style="color: #ffffff;"></i>
                     </div>
-
-                
+                </div>
+                <div class="text-zinc-400 md:mt-0 pt-10 ">
+                    <ul class="text-center">
+                        <li>Terms and conditions</li>
+                        <li>Terms of Use</li>
+                        <li>Cookie preferences</li>
+                        <li>Privacy policy</li>
+                        <li>Customer Experience</li>
+                    </ul>
                 </div>
 
 
-
-
+            </div>
+            <div class="md:mt-30 mt-10 py-5">
+                <p class="text-zinc-400 text-base"> © 2025 All rights reserved BookNChill | Designed by Adithya Bijimon
+                </p>
 
             </div>
+
+
+
         </div>
-
-
     </div>
-
-
 
 </body>
 
